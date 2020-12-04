@@ -16,36 +16,32 @@ $ sudo systemctl start docker
 $ sudo systemctl enable docker
 $ sudo docker run hello-world
 ```
- 
+
+docker composeのインストール
+```bash
+$ sudo -i
+# curl -L https://github.com/docker/compose/releases/download/1.25.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+# chmod +x /usr/local/bin/docker-compose
+# exit
+$ docker-compose --version
+```
+
+
 # Usage
  
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
+gitからファイルの入手
  
 ```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
+git clone https://github.com/HSRNetwork/docker-powerdns-admin
+cd docker-powerdns-admin
+docker-compose up -d
 ```
  
 # Note
  
-注意点などがあれば書く
+ソースの方のymlファイルでは、コンテナ名などが設定されていなかったので追加した.
+また、パスワードなど適宜変更しなければならない点がある.
  
-# Author
- 
-作成情報を列挙する
- 
-* 作成者
-* 所属
-* E-mail
- 
-# License
-ライセンスを明示する
- 
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
- 
-社内向けなら社外秘であることを明示してる
- 
-"hoge" is Confidential.
+
 
 
