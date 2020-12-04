@@ -36,6 +36,7 @@ git clone https://github.com/HSRNetwork/docker-powerdns-admin
 cd docker-powerdns-admin
 docker-compose up -d
 ```
+http://localhost:docker-compose.ymlで設定したポート番号
  
 # Note
  
