@@ -1,6 +1,3 @@
-# -*- coding: cp932 -*-
-# mysqlの操作サンプル
-#easy_install mysql-connector-python
 import mysql.connector
 
 try:
