@@ -1,4 +1,5 @@
 import mysql.connector
+import pymysql.cursors
 
 try:
     cnn = mysql.connector.connect(host='localhost',
